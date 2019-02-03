@@ -6,27 +6,27 @@ import java.io.*;
 
 
 public class ThreeSolidMain
-{   
+{
 
    public static Manager tsManager = new Manager();
 
    // The entry main() method
-   public static void main(String[] args) 
+   public static void main(String[] args)
    {
- 
-      try 
+
+      try
       {
-         System.out.format("Starting ... \n");               
-      } 
+         System.out.format("Starting ... \n");
+      }
       catch (Exception main_except)
       {
          main_except.printStackTrace();
       }
 
-            try 
+            try
       {
-         System.out.format("Stopping ... \n");               
-      } 
+         System.out.format("Stopping ... \n");
+      }
       catch (Exception main_except)
       {
          main_except.printStackTrace();
@@ -37,21 +37,11 @@ public class ThreeSolidMain
    }
  }
 
-// interface segregation principle - good example 
+// interface segregation principle - good example
 
 class Worker implements IWorkable, IFeedable{
 	public void work() {
 		// ....working
-	}
-
-	public void eat() {
-		//.... eating in launch break
-	}
-}
-
-class SuperWorker implements IWorkable, IFeedable{
-	public void work() {
-		//.... working much more
 	}
 
 	public void eat() {
