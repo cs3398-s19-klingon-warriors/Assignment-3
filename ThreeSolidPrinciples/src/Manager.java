@@ -11,7 +11,7 @@ class Manager {
 	public void Manager() {
 
 	}
-	public void setWorker(IWorker w) {
+	public void setWorker(IWorkable w) {
 		worker=w;
 	}
 
