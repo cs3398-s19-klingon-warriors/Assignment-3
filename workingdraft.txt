@@ -5,9 +5,19 @@ Team Members and Files:
 2.
 3.
 4.
-5.
+5. Serena Gutierrez - Worker.java
 
 Explanations (per file):
+
+
+
+
+Working.java
+Adheres to open close & single responsibility.
+By having the class separated from other worker types, we could extend it to add
+more functionality which applies to the open close principle. 
+Furthermore, single responsibility applies as each class is organized by individual
+responsibilities. 
 
 
 Final assessment of solution:

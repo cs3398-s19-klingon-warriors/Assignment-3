@@ -39,16 +39,6 @@ public class ThreeSolidMain
 
 // interface segregation principle - good example
 
-class Worker implements IWorkable, IFeedable{
-	public void work() {
-		// ....working
-	}
-
-	public void eat() {
-		//.... eating in launch break
-	}
-}
-
 class Manager {
 	IWorkable worker;
 
