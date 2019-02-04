@@ -1,12 +1,12 @@
 package threesolid ;
 
-// RK
-// in progress
+// Rachel Kelmenson
+// Commentary in general explanation txt file
 
 
 class Manager {
 	
-	IWorkable worker ;
+	IWorkable worker ; // changed from IWorker to IWorkable
 
 	public void Manager() {
 
