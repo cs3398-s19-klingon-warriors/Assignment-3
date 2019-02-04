@@ -37,19 +37,3 @@ public class ThreeSolidMain
    }
  }
 
-// interface segregation principle - good example
-
-class Manager {
-	IWorkable worker;
-
-	public void Manager() {
-
-	}
-	public void setWorker(IWorkable w) {
-		worker=w;
-	}
-
-	public void manage() {
-		worker.work();
-	}
-}
