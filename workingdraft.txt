@@ -4,15 +4,24 @@ Team Members and Files:
 1.
 2.
 3.
-4.
+4. Abel Shinabery - IWorkable.java, IFeedable.java
 5. Serena Gutierrez - Worker.java
 
 Explanations (per file):
 
 
+==============================
+Iworkable.java, IFeedable.java
+==============================
+Adheres to the interface segragation principle. 
+By separating the original interface, IWorker, into two distinct interfaces, we allow
+only the necessary functions to be implemented. For instance, in the case of the Robot
+class: Robots can work, but they cannot eat, so it was a waste of code to have them
+implement an eat function when they would never use it.
 
-
-Working.java
+============
+Worker.java
+============
 Adheres to open close & single responsibility.
 By having the class separated from other worker types, we could extend it to add
 more functionality which applies to the open close principle. 
