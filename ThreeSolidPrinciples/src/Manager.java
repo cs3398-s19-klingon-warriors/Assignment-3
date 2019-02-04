@@ -4,7 +4,9 @@ package threesolid ;
 // in progress
 
 class Manager {
-	IWorker worker;
+	// IWorker worker;
+	
+	IWorkable worker ;
 
 	public void Manager() {
 
