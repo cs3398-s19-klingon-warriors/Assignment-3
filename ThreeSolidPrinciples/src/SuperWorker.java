@@ -1,3 +1,5 @@
+package threesolid;
+
 class SuperWorker implements IWorkable, IFeedable{
 	public void work() {
 		//.... working much more
