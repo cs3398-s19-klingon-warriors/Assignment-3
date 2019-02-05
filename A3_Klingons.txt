@@ -110,7 +110,12 @@ understand, with so many files compared to the actual current contents of each f
 code is more expandable and will be easier to modify or augment, however, which is part of 
 what the principles intend. 
 
-By splitting up the original code into different files, we can also restrict access/editing rights to certain files (and elements within), while still allowing access to others. This follows open-close better, by closing some parts to modification. For example, one development team or company department may be granted editing access to SuperWorker.java, but not be able to change other .java files. The chief of operations may be the only one granted modification rights to the Main file (how the company is actually run).
+By splitting up the original code into different files, we can also restrict access/editing rights to
+certain files (and elements within), while still allowing access to others. This follows open-close 
+better, by closing some parts to modification. For example, one development team or company department
+may be granted editing access to SuperWorker.java, but not be able to change other .java files. The 
+chief of operations may be the only one granted modification rights to the Main file (how the company 
+is actually run).
 
 Separating the IWorker interface into IFeedable and IWorkable is unquestionably good, since 
 the Robot class has no need to eat() and in the existing code that was a major violation of 
@@ -127,10 +132,11 @@ extension which only relates to a Worker's dietary needs. It may be more in line
 single-responsibility principle to follow the Employee example and separate these implementations 
 further.
 
-Upon further inspection, it might also be important to explore the possibility of explicitly extending classes. For instance, a SuperWorker can do everything a Worker does, but 
-more. Because a SuperWorker is a Worker, SuperWorker could extend Worker without having to re-implement the work() and eat() functions from the interfaces and add extra functionality 
-as needed. You could also have Robot extend Worker, but this would break the interface segregation rule, even though a Robot is technically a Worker.
-
+Upon further inspection, it might also be important to explore the possibility of explicitly extending
+classes. For instance, a SuperWorker can do everything a Worker does, but more. Because a SuperWorker 
+is a Worker, SuperWorker could extend Worker without having to re-implement the work() and eat() 
+functions from the interfaces and add extra functionality as needed. You could also have Robot extend 
+Worker, but this would break the interface segregation rule, even though a Robot is technically a Worker.
 
 ================
 Additional Notes
