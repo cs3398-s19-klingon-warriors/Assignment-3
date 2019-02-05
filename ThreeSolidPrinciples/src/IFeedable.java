@@ -1,13 +1,6 @@
-/**
-*	
-* We moved the eat function to its own interface because 
-* some employees do not use the eat method originally 
-* included (i.e. Robot). This follows the Interface
-* Segregation principle by spreading out one big interface
-* into multiple interfaces.
-*
-* @author Abel
-*
+/*
+	Abel Shinabery
+	Three Principles explanation found in Assignment-3/A3_Klingons.txt
 */
 
 package threesolid;
