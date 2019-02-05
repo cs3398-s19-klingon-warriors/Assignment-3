@@ -127,6 +127,10 @@ extension which only relates to a Worker's dietary needs. It may be more in line
 single-responsibility principle to follow the Employee example and separate these implementations 
 further.
 
+Upon further inspection, it might also be important to explore the possibility of explicitly extending classes. For instance, a SuperWorker can do everything a Worker does, but 
+more. Because a SuperWorker is a Worker, SuperWorker could extend Worker without having to re-implement the work() and eat() functions from the interfaces and add extra functionality 
+as needed. You could also have Robot extend Worker, but this would break the interface segregation rule, even though a Robot is technically a Worker.
+
 
 ================
 Additional Notes
