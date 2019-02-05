@@ -1,3 +1,8 @@
+/*
+SuperWorker.java
+@sarah gibbons 
+*/
+
 package threesolid;
 
 class SuperWorker implements IWorkable, IFeedable{
