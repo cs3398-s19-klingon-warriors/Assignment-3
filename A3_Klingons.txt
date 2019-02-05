@@ -44,6 +44,7 @@ interfaces may occur separately.
 ============
 Worker.java
 ============
+Adheres to open close & single responsibility principles. 
 By having the class separated from other worker types, we could extend it to add more 
 functionality which applies to the open close principle. For an example, Worker may 
 require an additional 15 minute break whereas SuperWorker does not need an additional 
