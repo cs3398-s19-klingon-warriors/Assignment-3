@@ -44,8 +44,13 @@ interfaces may occur separately.
 ============
 Worker.java
 ============
-By having the class separated from other worker types, we could extend it to add more functionality which applies to the open close principle. For an example, Worker may require an additional 15 minute break whereas SuperWorker does not need an additional break.
-Furthermore, single responsibility applies as each class is organized by individual responsibilities. Similar to SuperWorker, Worker may have different or less responsibilities than other worker types. 
+By having the class separated from other worker types, we could extend it to add more 
+functionality which applies to the open close principle. For an example, Worker may 
+require an additional 15 minute break whereas SuperWorker does not need an additional 
+break.
+Furthermore, single responsibility applies as each class is organized by individual 
+responsibilities. Similar to SuperWorker, Worker may have different or less 
+responsibilities than other worker types. 
 
 ============
 Robot.java
