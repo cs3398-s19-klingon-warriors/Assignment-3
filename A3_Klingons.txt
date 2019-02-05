@@ -11,12 +11,12 @@ Explanations (per file):
 ==============================
 SuperWorker.java
 ==============================
-Adheres to open close and single responsibility principles; opened for extension, closed for modification. 
+Adheres to open close principle: opened for extension, closed for modification. Note: we kept SuperWorker.java separate from Workers.java (by single responsibility), keeping them separate allows changes to one without risking changes to another. 
 
 ==============================
 Iworkable.java, IFeedable.java
 ==============================
-Adheres to the interface segragation principle.
+Adheres to the interface segregation principle.
 By separating the original interface, IWorker, into two distinct interfaces, we allow
 only the necessary functions to be implemented. For instance, in the case of the Robot
 class: Robots can work, but they cannot eat, so it was a waste of code to have them
