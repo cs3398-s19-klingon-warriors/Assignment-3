@@ -57,4 +57,4 @@ By separating the ThreeSolidMain class:
 Additional Notes
 ============
 
-Team discussion and planning was conducted daily on semi-private Slack channel and Trello board. We expect to integrate this more with the public Slack and ZenHub in the future!
+Team discussion and planning was conducted daily on semi-private Slack channel and Trello board. We expect to integrate this more with the public Slack and ZenHub in the future! (Late-stage edits were discussed on Slack and then implemented by specific team members to minimize conflicts.)
