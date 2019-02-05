@@ -53,6 +53,13 @@ By separating the ThreeSolidMain class:
 2) We don't adhere to the Open Close principle since we may change algorithms the best approach in running the program.
 3) We also don't adhere to the Interface Segregation Principle since there are no interfaces declared or implemented in this class.
 
+==============================
+Qualitative Assessment
+==============================
+
+*** add here
+
+
 ============
 Additional Notes
 ============
