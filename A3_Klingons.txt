@@ -36,8 +36,14 @@ responsibilities.
 ============
 Robot.java
 ============
-Adheres to Open Close & Single Responsibility principles.
-The Robot class only uses one interface (IWorkable), not both (IWorkable + IFeedable) like Worker and SuperWorker do. Since Robots do not need to eat(), interface segregation enables a Robot to only implement the method it needs, work(). Robots may be extended or given additional features that are very different than a human Worker, so it makes sense by single-responsibility and open-close to keep the Robot class in a separate file. Robots implementing IWorkable works with open-close, since the original IWorkable interface is not changed but Robots can extend and perhaps modify themselves later.
+Adheres to Open Close, Single Responsibility principles & Interface Segregation.
+The Robot class only uses one interface (IWorkable), not both (IWorkable + IFeedable) 
+like Worker and SuperWorker do. Since Robots do not need to eat(), interface segregation
+enables a Robot to only implement the method it needs, work(). Robots may be extended or
+given additional features that are very different than a human Worker, so it makes sense
+by single-responsibility and open-close to keep the Robot class in a separate file. 
+Robots implementing IWorkable works with open-close, since the original IWorkable
+interface is not changed but Robots can extend and perhaps modify themselves later.
 
 
 ============
