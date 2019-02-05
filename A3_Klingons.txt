@@ -1,4 +1,6 @@
-Working draft of final assignment submission
+CS 3398
+Assignment 3
+Team: Kingons
 
 Team Members and Files:
 1. Sarah Gibbons - SuperWorker.java
