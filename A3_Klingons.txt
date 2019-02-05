@@ -1,19 +1,22 @@
 Working draft of final assignment submission
 
 Team Members and Files:
-1.
+1. Sarah Gibbons - SuperWorker.java
 2. Talon Sjostrom - Robot.java
 3. Rachel Kelmenson - Manager.java
 4. Abel Shinabery - IWorkable.java, IFeedable.java
 5. Serena Gutierrez - Worker.java
 
 Explanations (per file):
-
+==============================
+SuperWorker.java
+==============================
+Adheres to open close and single responsibility principles; opened for extension, closed for modification. 
 
 ==============================
 Iworkable.java, IFeedable.java
 ==============================
-Adheres to the interface segragation principle. 
+Adheres to the interface segragation principle.
 By separating the original interface, IWorker, into two distinct interfaces, we allow
 only the necessary functions to be implemented. For instance, in the case of the Robot
 class: Robots can work, but they cannot eat, so it was a waste of code to have them
@@ -24,9 +27,9 @@ Worker.java
 ============
 Adheres to open close & single responsibility.
 By having the class separated from other worker types, we could extend it to add
-more functionality which applies to the open close principle. 
+more functionality which applies to the open close principle.
 Furthermore, single responsibility applies as each class is organized by individual
-responsibilities. 
+responsibilities.
 
 ============
 Robot.java
@@ -39,5 +42,3 @@ The Robot class only uses one interface, not both like Worker and SuperWorker. R
 Manager.java
 ============
 Manager is a distinct entity in the "workplace", with tasks and responsibilities separate from any other. It is not a worker, nor does it implement an interface (although you would think Managers have to eat!). For this reason, it makes sense to split Manager off into its own file. The Manager class is likely to be used or changed by users who may have nothing to do with the Worker classes, so keeping it separate aligns with the single responsibility principle. In future, users may want to make different types of managers - perhaps managers for different departments, or at different levels in the hierarchy. Open/close would recommend that those users extend the existing Manager class, rather than modify the class as it currently is. That may also be the case if different Managers need to have additional Workers or be able to issue more instructions. Since Manager is not an interface, the interface segregation principle doesn't apply to the class itself, but it does apply to the worker that this Manager manages. This Manager now uses an IWorkable worker, as opposed to the previous IWorker. The difference is that the old IWorker interface had methods to both work() and eat(), while IWorkable only does work(). Though Manager does not implement this interface, the Manager does not care if the worker eats; Manager only calls the work() method. In this case, separating the IWorker into two interfaces by the interface segregation principle helps focus the Manager's sphere of influence - in this form, the Manager would be unlikely (or perhaps unable) to overstep their bounds and tell the worker when to eat().
-
-
