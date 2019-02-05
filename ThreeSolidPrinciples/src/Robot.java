@@ -1,7 +1,7 @@
 /* 
    Talon Sjostrom
    
-   Three Principles explanation found in Assignment-3/workingdraft.txt
+   Three Principles explanation found in Assignment-3/A3_Klingons.txt
 */
 
 package threesolid;
