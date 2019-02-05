@@ -1,6 +1,6 @@
 CS 3398
 Assignment 3
-Team: Kingons
+Team: Klingons
 
 Team Members and Files:
 1. Sarah Gibbons - SuperWorker.java
