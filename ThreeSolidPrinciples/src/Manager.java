@@ -1,9 +1,9 @@
-package threesolid ;
-
 /* 
 Rachel Kelmenson
 Three Principles explanation found in Assignment-3/A3_Klingons.txt
 */
+
+package threesolid ;
 
 class Manager {
 	
