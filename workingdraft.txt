@@ -2,7 +2,7 @@ Working draft of final assignment submission
 
 Team Members and Files:
 1.
-2.
+2. Talon Sjostrom - Robot.java
 3. Rachel Kelmenson - Manager.java
 4. Abel Shinabery - IWorkable.java, IFeedable.java
 5. Serena Gutierrez - Worker.java
@@ -28,6 +28,11 @@ more functionality which applies to the open close principle.
 Furthermore, single responsibility applies as each class is organized by individual
 responsibilities. 
 
+============
+Robot.java
+============
+Adheres to Open Close & Single Responsibility principles.
+The Robot class only uses one interface, not both like Worker and SuperWorker. Robot does share the same interface that Manager uses, but Robot does not carry the same responsibilities as Manager and should therefor be separated into its own class.
 
 
 ============
