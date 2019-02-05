@@ -16,11 +16,11 @@ Adheres to open close and single responsibility principles; opened for extension
 ==============================
 Iworkable.java, IFeedable.java
 ==============================
-Adheres to the interface segragation principle.
-By separating the original interface, IWorker, into two distinct interfaces, we allow
+Adheres to the interface segregation principle.
+By separating the original interface, IWorker, into two distinct interfaces (IWorkable and IFeedable), we allow
 only the necessary functions to be implemented. For instance, in the case of the Robot
 class: Robots can work, but they cannot eat, so it was a waste of code to have them
-implement an eat function when they would never use it.
+implement an eat function when they would never use it. Worker and SuperWorker both work and eat, so they have the option to implement both IWorkable and IFeedable classes.
 
 ============
 Worker.java
