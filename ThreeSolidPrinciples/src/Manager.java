@@ -1,7 +1,7 @@
 package threesolid ;
 
 // Rachel Kelmenson
-// Commentary in general explanation txt file
+// Notes in A3_Klingons.txt file
 
 
 class Manager {
