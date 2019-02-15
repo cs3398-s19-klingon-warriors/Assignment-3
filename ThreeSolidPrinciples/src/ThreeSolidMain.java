@@ -2,7 +2,7 @@
 Three Principles explanation found in Assignment-3/A3_Klingons.txt
 @ Sarah Gibbons
 */
-package threesolid;
+package threesolid; 
 
 import java.awt.*;        // Using AWT container and component classes
 import java.awt.event.*;  // Using AWT event classes and listener interfaces
