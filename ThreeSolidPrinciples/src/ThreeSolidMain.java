@@ -18,12 +18,12 @@ public class ThreeSolidMain
   ==================
   */
     
-  public static Manager tsManager = new Manager();
+  //public static Manager tsManager = new Manager();
   //public tsProjectManager = new ProjectManager();
   //public tsProductManager = new ProductManager();
     
   
-  //public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
+  public static BaseWorker tsBaseWorker = new BaseWorker(); //(Possibly abstract?)
   //public tsRobot = new Robot();
   //public tsWorker = new Worker();
   //public tsSuperWorker = new SuperWorker();
@@ -67,6 +67,7 @@ public class ThreeSolidMain
       Base Worker (Might be abstract)
       ===============================
       */
+      tsBaseWorker.work();
       //tsBaseWorker.work();
       //tsBaseWorker.eat();
       //tsBaseWorker.sick();
