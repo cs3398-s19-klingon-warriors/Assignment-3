@@ -1,17 +1,28 @@
 /*
 SuperWorker.java
+
 Three Principles explanation found in Assignment-3/A3_Klingons.txt
-@sarah gibbons
+superworker implements IEat and ISick interfaces. Superworker extends BaseWorker
+Superworker overrides inherited work method. SuperWorker follows ISP in that if you were to add a different type of worker with new responsibilities then this worker wouldnt have to use the new responsibility.
+
+@author: sarah gibbons
 */
 
 package threesolid;
 
-class SuperWorker implements IWorkable, IFeedable{
+public class SuperWorker extends BaseWorker implements IEat, ISick{
+	@Override
 	public void work() {
-		//.... working much more
+		System.out.format("\tSuperWorker work() ... \n");
+		//.... i override my work method cause im super duper
 	}
 
 	public void eat() {
-		//.... eating in launch break
+		System.out.format("\tSuperWorker eat() ... \n");
+
+	}
+	public void sick() {
+		System.out.format("\tSuperWorker sick() ... \n");
+
 	}
 }

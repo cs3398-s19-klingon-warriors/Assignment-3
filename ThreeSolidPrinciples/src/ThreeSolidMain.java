@@ -11,24 +11,24 @@ import java.io.*;
 
 public class ThreeSolidMain
 {
-    
+
   /*
   ==================
   Classes
   ==================
   */
-    
+
   public static Manager tsManager = new Manager();
   //public tsProjectManager = new ProjectManager();
   //public tsProductManager = new ProductManager();
-    
-  
+
+
   //public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
   //public tsRobot = new Robot();
   //public tsWorker = new Worker();
-  //public tsSuperWorker = new SuperWorker();
-  //public tsTempWorker = new TempWorker();
-    
+  public tsSuperWorker = new SuperWorker();
+  public tsTempWorker = new TempWorker();
+
   // The entry main() method
   public static void main(String[] args)
   {
@@ -40,10 +40,10 @@ public class ThreeSolidMain
       ===============
       Manager
       ===============
-      */    
+      */
       //tsManager.setWorker(tsWorker);
       //tsManager.manage();
-        
+
       /*
       ===============
       Project Manager
@@ -52,7 +52,7 @@ public class ThreeSolidMain
       //tsProjectManager.scheduleWork();
       //tsProjectManager.setWorker(tsWorker);
       //tsProjectManager.manage();
-      
+
       /*
       ===============
       Product Manager
@@ -61,7 +61,7 @@ public class ThreeSolidMain
       //tsProductManager.defineProduct();
       //tsProductManager.setWorker(tsWorker);
       //tsProductManager.manage();
-        
+
       /*
       ===============================
       Base Worker (Might be abstract)
@@ -70,7 +70,7 @@ public class ThreeSolidMain
       //tsBaseWorker.work();
       //tsBaseWorker.eat();
       //tsBaseWorker.sick();
-        
+
       /*
       ===============
       Robot
@@ -78,7 +78,7 @@ public class ThreeSolidMain
       */
       //tsRobot.work();
       //tsRobot.reboot();
-    
+
       /*
       ===============
       Worker
@@ -87,25 +87,25 @@ public class ThreeSolidMain
       //tsWorker.work();
       //tsWorker.eat();
       //tsWorker.sick();
-        
+
       /*
       ===============
       Super Worker
       ===============
       */
-      //tsSuperWorker.work();
-      //tsSuperWorker.eat();
-      //tsSuperWorker.sick();
-    
+      tsSuperWorker.work();
+      tsSuperWorker.eat();
+      tsSuperWorker.sick();
+
       /*
       ===============
       Temp Worker
       ===============
       */
-      //tsTempWorker.work();
-      //tsTempWorker.eat();
-      //tsTempWorker.sick();
-      
+      tsTempWorker.work();
+      tsTempWorker.eat();
+      tsTempWorker.sick();
+
     }
     catch (Exception main_except)
     {
