@@ -6,6 +6,6 @@ package threesolid;
 
 public class BaseWorker{
     public void work(){
-        System.out.println("Default Work: Werk werk werk werk");
+        System.out.println("BaseWorker work(): \n\tWerk werk werk werk");
     }
 }
