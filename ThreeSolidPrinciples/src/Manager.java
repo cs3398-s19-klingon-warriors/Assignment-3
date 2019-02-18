@@ -7,12 +7,12 @@ package threesolid ;
 
 class Manager {
 	
-	IWorkable worker ; // changed from IWorker to IWorkable
+	BaseWorker worker ; // changed from IWorkable to BaseWorker
 
 	public void Manager() {
 
 	}
-	public void setWorker(IWorkable w) {
+	public void setWorker(BaseWorker w) {
 		worker=w;
 	}
 
