@@ -24,7 +24,7 @@ public class ThreeSolidMain
 
 
   public static BaseWorker tsBaseWorker = new BaseWorker(); //(Possibly abstract?)
-  //public tsRobot = new Robot();
+  public static Robot tsRobot = new Robot();
   public static Worker tsWorker = new Worker();
   public static SuperWorker tsSuperWorker = new SuperWorker();
   public static TempWorker tsTempWorker = new TempWorker();
@@ -76,8 +76,8 @@ public class ThreeSolidMain
       Robot
       ===============
       */
-      //tsRobot.work();
-      //tsRobot.reboot();
+      tsRobot.work();
+      tsRobot.reboot();
 
       /*
       ===============
