@@ -23,7 +23,7 @@ public class ThreeSolidMain
   //public tsProductManager = new ProductManager();
 
 
-  //public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
+  public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
   //public tsRobot = new Robot();
   //public tsWorker = new Worker();
   public tsSuperWorker = new SuperWorker();
