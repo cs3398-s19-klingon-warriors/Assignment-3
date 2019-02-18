@@ -16,6 +16,4 @@ class Worker extends BaseWorker implements IEat, ISick{
     public void sick(){
         System.out.println("Worker: *puke emoji*");
     }
-       
 }
-
