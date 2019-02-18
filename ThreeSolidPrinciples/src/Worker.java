@@ -5,13 +5,17 @@
   
 package threesolid;
 
-class Worker implements IWorkable, IFeedable{
-	public void work() {
-		// ....working
-	}
-
-	public void eat() {
-		//.... eating in launch break
-	}
+class Worker extends BaseWorker implements IEat, ISick{
+    @Override
+    public void work() {
+        System.out.println("Worker: Work is never over");
+    }
+    public void eat() {
+        System.out.println("Worker: eats and eats and eats and eats");
+    }
+    public void sick(){
+        System.out.println("Worker: *puke emoji*");
+    }
+       
 }
 

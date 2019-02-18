@@ -25,9 +25,9 @@ public class ThreeSolidMain
 
   public static BaseWorker tsBaseWorker = new BaseWorker(); //(Possibly abstract?)
   //public tsRobot = new Robot();
-  //public tsWorker = new Worker();
+  public static Worker tsWorker = new Worker();
   public static SuperWorker tsSuperWorker = new SuperWorker();
- public static TempWorker tsTempWorker = new TempWorker();
+  public static TempWorker tsTempWorker = new TempWorker();
 
   // The entry main() method
   public static void main(String[] args)
@@ -67,7 +67,7 @@ public class ThreeSolidMain
       Base Worker (Might be abstract)
       ===============================
       */
-      //tsBaseWorker.work();
+      tsBaseWorker.work();
       //tsBaseWorker.eat();
       //tsBaseWorker.sick();
 
@@ -84,9 +84,9 @@ public class ThreeSolidMain
       Worker
       ===============
       */
-      //tsWorker.work();
-      //tsWorker.eat();
-      //tsWorker.sick();
+      tsWorker.work();
+      tsWorker.eat();
+      tsWorker.sick();
 
       /*
       ===============
