@@ -6,8 +6,8 @@
 
 package threesolid;
 
-class Robot implements IWorkable{
-	public void work() {
-		// ....working
+class Robot extends BaseWorker implements IReboot{
+	public void reboot() {
+		System.out.println("Robot: \n\tRebooting... and done.\n");
 	}
 }
