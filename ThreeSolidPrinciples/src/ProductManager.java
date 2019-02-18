@@ -14,7 +14,7 @@ public class ProductManager extends Manager
 		System.out.format("Creating a ProductManager ... \n");
 	}
 
-	public void defineproduct()
+	public void defineProduct()
 	{
 		System.out.format("The product manager is defining a product...let's hope Apple hasn't thought of this yet ... \n");
 	}

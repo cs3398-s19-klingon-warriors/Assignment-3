@@ -14,7 +14,7 @@ public class ProjectManager extends Manager
 		System.out.format("Creating a ProjectManager ... \n");
 	}
 
-	public void schedulework()
+	public void scheduleWork()
 	{
 		System.out.format("The project manager is scheduling work...don't be late! ... \n");
 	}

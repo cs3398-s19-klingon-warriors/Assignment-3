@@ -19,13 +19,13 @@ public class ThreeSolidMain
   */
     
   public static Manager tsManager = new Manager();
-  //public tsProjectManager = new ProjectManager();
-  //public tsProductManager = new ProductManager();
+  public static ProjectManager tsProjectManager = new ProjectManager();
+  public static ProductManager tsProductManager = new ProductManager();
     
   
-  //public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
+ //  public static BaseWorker tsBaseWorker = new BaseWorker(); // (Possibly abstract?)
   //public tsRobot = new Robot();
-  //public tsWorker = new Worker();
+  public static Worker tsWorker = new Worker();
   //public tsSuperWorker = new SuperWorker();
   //public tsTempWorker = new TempWorker();
     
@@ -41,26 +41,26 @@ public class ThreeSolidMain
       Manager
       ===============
       */    
-      //tsManager.setWorker(tsWorker);
-      //tsManager.manage();
+      tsManager.setWorker(tsWorker);
+      tsManager.manage();
         
       /*
       ===============
       Project Manager
       ===============
       */
-      //tsProjectManager.scheduleWork();
-      //tsProjectManager.setWorker(tsWorker);
-      //tsProjectManager.manage();
+      tsProjectManager.scheduleWork();
+      tsProjectManager.setWorker(tsWorker);
+      tsProjectManager.manage();
       
       /*
       ===============
       Product Manager
       ===============
       */
-      //tsProductManager.defineProduct();
-      //tsProductManager.setWorker(tsWorker);
-      //tsProductManager.manage();
+      tsProductManager.defineProduct();
+      tsProductManager.setWorker(tsWorker);
+      tsProductManager.manage();
         
       /*
       ===============================
