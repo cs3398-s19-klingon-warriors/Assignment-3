@@ -23,11 +23,11 @@ public class ThreeSolidMain
   //public tsProductManager = new ProductManager();
 
 
-  public tsBaseWorker = new BaseWorker(); (Possibly abstract?)
+  public static BaseWorker tsBaseWorker = new BaseWorker(); //(Possibly abstract?)
   //public tsRobot = new Robot();
   //public tsWorker = new Worker();
-  public tsSuperWorker = new SuperWorker();
-  public tsTempWorker = new TempWorker();
+  public static SuperWorker tsSuperWorker = new SuperWorker();
+ public static TempWorker tsTempWorker = new TempWorker();
 
   // The entry main() method
   public static void main(String[] args)
@@ -39,7 +39,7 @@ public class ThreeSolidMain
       /*
       ===============
       Manager
-      ===============
+      ==============
       */
       //tsManager.setWorker(tsWorker);
       //tsManager.manage();
