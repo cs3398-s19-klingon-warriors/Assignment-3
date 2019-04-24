@@ -9,7 +9,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
-mainClassName = 'hello.HelloWorld'
+mainClassName = 'threesolid.ThreeSolidMain'
 // tag::repositories[]
 repositories {
     mavenCentral()
@@ -75,3 +75,6 @@ wrapper() {
     gradleVersion = '4.9'
 }
 // end::wrapper[]
+test {
+    useJUnitPlatform()
+}
