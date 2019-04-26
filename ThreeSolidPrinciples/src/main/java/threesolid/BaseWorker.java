@@ -10,9 +10,9 @@ public class BaseWorker{
     }
 
     
-    public String new_work() // added for A17
+    public int new_work() // added for A17
     {
-	    return "I'm working already!";
+	    return 6;
     }
 
 }
