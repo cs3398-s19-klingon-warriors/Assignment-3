@@ -14,5 +14,11 @@ public class BaseWorker{
     {
 	    return "I'm working already!";
     }
+    public String old_work(){
+         return "I'm tired of working already!";
+    }
+    public String working(){
+        return "I am working";
+    }
 
 }

@@ -14,11 +14,24 @@ import org.junit.jupiter.api.*;
 
 public class TestWorker{
     private Worker w = new Worker();
-
     @Test
     @DisplayName("Work Method Test")
 
     public void testWorkMethod(){
         assertEquals(w.new_work(),"I'm working already!","Mismatch between test text and method text");
     }
+
+   @Test
+   @DisplayName("My Passing Test")
+   public void testOldWorker(){
+       assertEquals(w.old_work(), "I'm tired of working already!");
+   }
+
+  
+   @Test
+   @DisplayName("My Failing Test")
+   public void testWorkerFail(){
+       assertEquals(w.working(), "Werk Werk Werk Weeerk");
+   }
+  
 }
