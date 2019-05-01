@@ -24,6 +24,30 @@ jar {
 // tag::dependencies[]
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+
+
+// copy parts from A18 build.gradle
+
+dependencies {
+    compile "joda-time:joda-time:2.2"
+    testCompile('org.junit.jupiter:junit-jupiter-api:5.3.1')
+    testCompile('org.junit.jupiter:junit-jupiter-params:5.3.1')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.3.1')
+// the following is a work around to fix the warning:
+//          warning: unknown enum constant Status.STABLE
+    testCompile "org.apiguardian:apiguardian-api:1.0.0"
+}
+
+// ****** Comment this out on the remote repository so that Travis CI will build ****** 
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+/*
 dependencies {
     compile "joda-time:joda-time:2.2"
     testCompile "org.junit.jupiter:junit-jupiter-api:5.0.1"
@@ -32,6 +56,7 @@ dependencies {
     testCompileOnly "org.apiguardian:apiguardian-api:1.0.0"
 }
 // end::dependencies[]
+*/
 task dist {
     description "Generate the dist(s) into the dist folder need to fix this."
 }
@@ -70,6 +95,8 @@ task zipTest(type: Zip, dependsOn: distSetup) {
 distSetup.dependsOn(build)
 dist.dependsOn(zipDist)
 dist.dependsOn(zipTest)
+
+/*
 // tag::wrapper[]
 wrapper() {
     gradleVersion = '4.9'
@@ -78,3 +105,4 @@ wrapper() {
 test {
     useJUnitPlatform()
 }
+*/
