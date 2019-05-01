@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="threesolid.TestWorker" tests="3" skipped="0" failures="1" errors="0" timestamp="2019-05-01T05:22:22" hostname="Serenas-MacBook-Pro-2.local" time="0.016">
+<testsuite name="threesolid.TestWorker" tests="3" skipped="0" failures="1" errors="0" timestamp="2019-05-01T06:37:14" hostname="Serenas-MacBook-Pro-2.local" time="0.016">
   <properties/>
-  <testcase name="testOldWorker()" classname="threesolid.TestWorker" time="0.01"/>
-  <testcase name="testWorkMethod()" classname="threesolid.TestWorker" time="0.0"/>
-  <testcase name="testWorkerFail()" classname="threesolid.TestWorker" time="0.003">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;I am working&gt; but was: &lt;Werk Werk Werk Weeerk&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;I am working&gt; but was: &lt;Werk Werk Werk Weeerk&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
-	at threesolid.TestWorker.testWorkerFail(TestWorker.java:34)
+  <testcase name="testWorkMethod()" classname="threesolid.TestWorker" time="0.01"/>
+  <testcase name="newTest_sg_WorkerFail()" classname="threesolid.TestWorker" time="0.003">
+    <failure message="org.opentest4j.AssertionFailedError: expected: not equal but was: &lt;I am working&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: not equal but was: &lt;I am working&gt;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:49)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:38)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:33)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:977)
+	at threesolid.TestWorker.newTest_sg_WorkerFail(TestWorker.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,6 +76,7 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
+  <testcase name="newTest_sg_WorkerPass()" classname="threesolid.TestWorker" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

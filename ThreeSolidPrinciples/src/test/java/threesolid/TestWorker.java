@@ -23,15 +23,13 @@ public class TestWorker{
 
    @Test
    @DisplayName("My Passing Test")
-   public void testOldWorker(){
+   public void newTest_sg_WorkerPass(){
        assertEquals(w.old_work(), "I'm tired of working already!");
-   }
-
-  
+   }  
    @Test
    @DisplayName("My Failing Test")
-   public void testWorkerFail(){
-       assertEquals(w.working(), "Werk Werk Werk Weeerk");
+   public void newTest_sg_WorkerFail(){
+       assertNotEquals(w.working(), "I am working");
    }
   
 }
