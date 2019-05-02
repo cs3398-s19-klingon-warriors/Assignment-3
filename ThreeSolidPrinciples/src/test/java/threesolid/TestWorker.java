@@ -14,11 +14,20 @@ import org.junit.jupiter.api.*;
 
 public class TestWorker{
     private Worker w = new Worker();
+    private Robot r;
 
     @Test
-    @DisplayName("Work Method Test")
+    @DisplayName("Success!")
 
-    public void testWorkMethod(){
-        assertEquals(w.new_work(),"I'm working already!","Mismatch between test text and method text");
+    public void newtest_A_S_WorkerPass(){
+        assertNull(r, "This thing is NULL, bro.");
     }
+    
+    @Test
+    @DisplayName("I'm a failure.")
+    
+     public void newtest_A_S_WorkerFail(){
+        assertNotSame(r, r);
+    }
+    
 }
