@@ -32,14 +32,14 @@ public class TestWorker{
        assertNotSame(r, w);
    } 
 
-/*   
+   
    @Test
    @DisplayName("My Failing Test")
    
    public void newTest_ts_WorkerFail(){
        assertNull(r.getRebootSeconds());
    }  
-*/
+
 
 /*
    @Test
