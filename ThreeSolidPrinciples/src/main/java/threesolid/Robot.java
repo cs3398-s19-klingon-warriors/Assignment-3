@@ -7,7 +7,14 @@
 package threesolid;
 
 class Robot extends BaseWorker implements IReboot{
+	
+	private int rebootSeconds = 3;
+
 	public void reboot() {
 		System.out.println("Robot: \n\tRebooting... and done.\n");
+	}
+
+	public int getRebootSeconds(){
+		return rebootSeconds;
 	}
 }
