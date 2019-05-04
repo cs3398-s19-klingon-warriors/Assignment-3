@@ -19,7 +19,7 @@ public class BaseWorker{
     public boolean all_good()  // rk added for A17
 
     {
-	    return true ;
+	    return false ; // so test will fail
     }
 
     public int break_time()  // rk added for A17
