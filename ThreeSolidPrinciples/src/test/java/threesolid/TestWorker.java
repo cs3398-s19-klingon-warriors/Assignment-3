@@ -21,12 +21,13 @@ public class TestWorker{
         assertEquals(w.new_work(),"Ready for new work","Mismatch between test text and method text");
     }
 
-     @Test
-    @DisplayName("New Work Method Test")
+    @Test
+    @DisplayName("Break Time Test")
     public void checkBreakTime()
     {
 	int current_time = 6 ;
         assertNotSame(w.break_time(),current_time,"Problem: worker needs to take a break");
     }
+
 
 }
