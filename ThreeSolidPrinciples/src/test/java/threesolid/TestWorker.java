@@ -29,5 +29,12 @@ public class TestWorker{
         assertNotSame(w.break_time(),current_time,"Problem: worker needs to take a break");
     }
 
+      @Test
+    @DisplayName("All Good Test")
+    public void testAllGood()
+    {
+        assertTrue(w.all_good(),"Oh no! We are not all good");
+    }
+
 
 }
