@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="threesolid.TestWorker" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-04T01:55:37" hostname="cs-215795.local" time="0.012">
+<testsuite name="threesolid.TestWorker" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-05-04T01:59:18" hostname="cs-215795.local" time="0.024">
   <properties/>
-  <testcase name="testWorkMethod()" classname="threesolid.TestWorker" time="0.012"/>
+  <testcase name="testWorkMethod()" classname="threesolid.TestWorker" time="0.017"/>
+  <testcase name="checkBreakTime()" classname="threesolid.TestWorker" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
