@@ -10,9 +10,21 @@ public class BaseWorker{
     }
 
     
-    public int new_work() // added for A17
+    public String new_work() // added for A17
     {
-	    return 6;
+	    return "Ready for new work";
     }
 
+
+    public boolean all_good()  // rk added for A17
+
+    {
+	    return true ;
+    }
+
+    public int break_time()  // rk added for A17
+
+    {
+	    return 8 ;
+    }
 }

@@ -16,9 +16,8 @@ public class TestWorker{
     private Worker w = new Worker();
 
     @Test
-    @DisplayName("Work Method Test")
-
+    @DisplayName("New Work Method Test")
     public void testWorkMethod(){
-        assertEquals(w.new_work(),"I'm working already!","Mismatch between test text and method text");
+        assertEquals(w.new_work(),"Ready for new work","Mismatch between test text and method text");
     }
 }
